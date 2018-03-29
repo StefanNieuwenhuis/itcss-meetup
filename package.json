@@ -4,31 +4,35 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass --include-path scss scss/main.scss public/css/main.css",
-    "build:case": "",
-    "build:assignment": "",
-    "build:solution": "",
-    "watch": "nodemon -e scss -x \" npm build\"",
-    "watch:case": "",
-    "watch:assignment": "",
-    "watch:solution": ""
+    "build": "npm build:case",
+    "build:case": "node-sass --include-path src/1_case/scss scss/main.scss dist/css/main.css",
+    "build:assignment": "node-sass --include-path src/2_assignment/scss scss/main.scss dist/css/main.css",
+    "build:solution": "node-sass --include-path src/3_solution/scss scss/main.scss dist/css/main.css",
+    "watch": "npm watch:case",
+    "watch:case": "nodemon -e src/1_case/scss -x \" npm build:case\"",
+    "watch:assignment": "nodemon -e src/2_assignment/scss -x \" npm build:assignment\"",
+    "watch:solution": "nodemon -e src/3_solution/scss -x \" npm build:solution\""
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/StefanNieuwenhuis/itcss-meetup.git"
   },
   "keywords": [
-    "itcss",
-    "BEM",
-    "OOCSS",
-    "SMACSS",
     "bol.com",
-    "Meetup"
+    "Meetup",
+    "ITCSS"
   ],
   "author": "Huib van Geertruy, Stefan Nieuwenhuis",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/StefanNieuwenhuis/itcss-meetup/issues"
   },
-  "homepage": "https://github.com/StefanNieuwenhuis/itcss-meetup#readme"
+  "homepage": "https://github.com/StefanNieuwenhuis/itcss-meetup#readme",
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.8.3",
+    "nodemon": "^1.17.2"
+  }
 }

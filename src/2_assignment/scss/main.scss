@@ -1,7 +1,9 @@
 /* Settings */
 @import "1.settings/_global";
+@import "1.settings/_colors";
 
 /* Tools */
+@import "2.tools/_clearfix";
 @import "2.tools/_mixins";
 
 /* Generic */
@@ -9,6 +11,8 @@
 @import "../../../node_modules/normalize-scss/sass/_normalize";
 
 /* Elements */
+@import "4.elements/pages";
+@import "4.elements/headings";
 @import "4.elements/links";
 
 /* Objects */
@@ -18,4 +22,5 @@
 @import "6.components/buttons";
 
 /* Utilities */
+@import "7.utilities/headings.scss";
 @import "7.utilities/links.scss";

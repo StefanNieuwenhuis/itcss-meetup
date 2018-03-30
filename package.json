@@ -4,14 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm build:case",
+    "build": "npm run build:assignment",
     "build:case": "node-sass --include-path src/1_case/scss scss/main.scss dist/css/main.css",
-    "build:assignment": "node-sass --include-path src/2_assignment/scss scss/main.scss dist/css/main.css",
-    "build:solution": "node-sass --include-path src/3_solution/scss scss/main.scss dist/css/main.css",
-    "watch": "npm watch:case",
-    "watch:case": "nodemon -e src/1_case/scss -x \" npm build:case\"",
-    "watch:assignment": "nodemon -e src/2_assignment/scss -x \" npm build:assignment\"",
-    "watch:solution": "nodemon -e src/3_solution/scss -x \" npm build:solution\""
+    "build:assignment": "node-sass src/2_assignment/scss/main.scss dist/css/main.css --include-path src/2_assignment/scss && cp src/2_assignment/index.html dist",
+    "build:solution": "node-sass src/3_solution/scss/main.scss dist/css/main.css --include-path src/3_solution/scss"
   },
   "repository": {
     "type": "git",

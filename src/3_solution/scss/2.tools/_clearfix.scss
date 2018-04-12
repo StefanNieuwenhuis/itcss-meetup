@@ -1,0 +1,10 @@
+// clearfix is an hack to tame floating elements that are larger than their parent
+// usage: @extend %clearfix;
+
+%clearfix {
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}

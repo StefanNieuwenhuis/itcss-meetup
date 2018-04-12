@@ -1,0 +1,10 @@
+.u-link {
+  &--natural {
+    text-decoration: underline !important;
+    color: inherit !important;
+  }
+
+  &--obvious {
+    text-decoration: underline !important;
+  }
+}

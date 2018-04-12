@@ -1,0 +1,9 @@
+@function pxtorem($sizes...) {
+  $result: "";
+
+  @each $size in $sizes{
+    $result: $result + (($size + 0px) / $base-font-size) + rem + " ";
+  }
+
+  @return #{$result};
+}

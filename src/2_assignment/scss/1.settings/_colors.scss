@@ -1,23 +1,17 @@
 // The color file contains all colors used in the project.
 
 // Brand
-$color-brand-primary: rgb(051, 102, 204);
-$color-brand-secundary: rgb(058, 125, 231);
+$color-brand-primary: #272727;
+$color-brand-secundary: #cfcfcf;
 
 // Text
 $color-text: black;
-$color-link: $color-brand-primary;
-$color-link-hover: $color-brand-secundary;
-
-// Signal colors
-$color-success: rgb(051, 204, 131);
-$color-warn: rgb(255, 162, 078);
-$color-alert: rgb(248, 087, 105);
+$color-link: #008fee;
 
 // Backgrounds
-$color-background: rgb(211, 210, 209);
-$color-background-dark: rgb(048, 047, 046);
-$color-background-light: rgb(249, 249, 249);
+$color-background-dark: #9f9f9f;
+$color-background-light: #cfcfcf;
 
 // Borders
 $color-border: $color-background-dark;
+$color-border-light: $color-background-light;

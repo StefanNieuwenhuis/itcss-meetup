@@ -5,7 +5,7 @@
 $base-max-page-width: 1280px !default;
 
 // Font size & line heights
-$base-font-size: 12px !default;
+$base-font-size: 14px !default;
 $base-line-height: 24px !default;
 
 // Font families
@@ -14,5 +14,11 @@ $base-font-family: "Arial" !default;
 // Transitions
 $base-transition: 0.2s;
 
+$font-size-h1: 36px !default;
+$font-size-h2: 28px !default;
+$font-size-h3: 24px !default;
+$font-size-h4: 20px !default;
+$font-size-h5: 18px !default;
+$font-size-h6: $base-font-size !default;
 
 

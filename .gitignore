@@ -1,5 +1,6 @@
 # compiled output
 /dist
+*.css
 
 # dependencies
 /node_modules
@@ -24,3 +25,4 @@
 .DS_Store
 Thumbs.db
 src/1_case/css/main.css
+yarn-error.log

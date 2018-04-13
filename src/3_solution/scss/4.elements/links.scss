@@ -1,8 +1,6 @@
+@import '1.settings/colors';
+
 a {
   text-decoration: none;
   color: $color-link;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }

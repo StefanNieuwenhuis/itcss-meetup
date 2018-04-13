@@ -1,0 +1,27 @@
+@import '1.settings/colors';
+
+@mixin link-underline() {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@mixin link-menu() {
+  color: $color-brand-secundary;
+
+  &:hover {
+    transition: color 150ms ease-out;
+    color: #afafaf;
+  }
+}
+
+@mixin link-list() {
+  &:hover {
+    transition: 150ms ease-out;
+    cursor: pointer;
+
+    &:before, &:after {
+      border-color: $color-link;
+    }
+  }
+}

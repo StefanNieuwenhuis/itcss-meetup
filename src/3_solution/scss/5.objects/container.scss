@@ -1,0 +1,11 @@
+@import '1.settings/global';
+
+.container {
+  max-width: $base-max-page-width;
+  margin: 0 auto;
+}
+
+.container--flex {
+  display: flex;
+  padding: 60px 0;
+}

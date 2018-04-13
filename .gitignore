@@ -1,5 +1,6 @@
 # compiled output
 /dist
+*.css
 
 # dependencies
 /node_modules
@@ -23,4 +24,3 @@
 # System Files
 .DS_Store
 Thumbs.db
-src/1_case/css/main.css

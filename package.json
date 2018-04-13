@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build:case": "node-sass --include-path src/1_case/scss src/1_case/scss/main.scss src/1_case/css/main.css",
-    "build:assignment": "node-sass --include-path src/2_assigment/scss src/2_assignment/scss/main.scss src/2_assignment/css/main.css",
+    "build:assignment": "node-sass --include-path src/2_assignment/scss src/2_assignment/scss/main.scss src/2_assignment/css/main.css",
     "watch:case": "node-sass --watch --include-path src/1_case/scss src/1_case/scss/main.scss src/1_case/css/main.css",
-    "watch:assignment": "node-sass --watch --include-path src/2_assigment/scss src/2_assignment/scss/main.scss src/2_assignment/css/main.css",
+    "watch:assignment": "node-sass --watch --include-path src/2_assignment/scss src/2_assignment/scss/main.scss src/2_assignment/css/main.css",
     "open:case": "open src/1_case/index.html",
     "open:assignment": "open src/2_assignment/index.html"
   },

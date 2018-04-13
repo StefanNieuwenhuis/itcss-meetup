@@ -3,7 +3,6 @@
 @import "1.settings/_colors";
 
 /* Tools */
-@import "2.tools/_clearfix";
 @import "2.tools/_mixins";
 
 /* Generic */
@@ -12,15 +11,10 @@
 
 /* Elements */
 @import "4.elements/pages";
-@import "4.elements/headings";
-@import "4.elements/links";
 
 /* Objects */
-@import "5.objects/wrappers";
 
 /* Components */
-@import "6.components/buttons";
 
 /* Utilities */
-@import "7.utilities/headings.scss";
-@import "7.utilities/links.scss";
+@import "7.utilities/display.scss";

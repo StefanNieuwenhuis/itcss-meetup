@@ -1,0 +1,50 @@
+@mixin icon-search() { // would have rewritten this to be more robust.. but let's assume it is for now :)
+  position: relative;
+
+  &:after {
+    position: absolute;
+    right: 12px;
+    top: 5px;
+    content: '';
+    border-radius: 50%;
+    border: 1px solid $color-border;
+    width: 13px;
+    height: 13px;
+  }
+
+  &:before {
+    position: absolute;
+    right: 9px;
+    top: 16px;
+    content: '';
+    border: 1px solid $color-border;
+    width: 0px;
+    height: 9px;
+    transform: rotate(-45deg);
+  }
+}
+
+
+@mixin icon-chevron-right() { // would have rewritten this to be more robust.. but let's assume it is for now :)
+  position: relative;
+
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+    right: 10px;
+    border: 1px solid $color-border;
+    width: 0px;
+    height: 9px;
+  }
+
+  &:before {
+    transform: rotate(-45deg);
+    top: 16px;
+  }
+
+  &:after {
+    transform: rotate(45deg);
+    bottom: 16px;
+  }
+}

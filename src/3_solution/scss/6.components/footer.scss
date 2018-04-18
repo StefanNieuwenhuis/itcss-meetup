@@ -1,0 +1,41 @@
+@import '1.settings/colors';
+@import '2.tools/links';
+
+.footer-list {
+  margin: 0 40px;
+  color: $color-brand-secundary;
+}
+
+.footer-links {
+  .item {
+    line-height: 25px;
+    list-style-type: square;
+    list-style-position: inside;
+    color: $color-brand-secundary;
+
+  }
+  a {
+    color: $color-brand-secundary;
+    @include link-underline();
+  }
+}
+
+
+.footer-legal {
+  padding: 10px 0;
+  color: #9f9f9f;
+}
+
+.footer-legal__list {
+  flex-basis: 80%;
+  display: flex;
+
+  .item {
+    padding: 0 20px;
+
+    a {
+      color: $color-brand-secundary;
+      @include link-underline();
+    }
+  }
+}

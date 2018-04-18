@@ -1,0 +1,14 @@
+.search {
+  @include icon-search;
+
+  align-self: center;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.search__field {
+  width: 100%;
+  height: 100%;
+  padding-right: 25px;
+  box-sizing: border-box;
+}
